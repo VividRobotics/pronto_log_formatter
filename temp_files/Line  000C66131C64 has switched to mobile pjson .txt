@@ -1,0 +1,8 @@
+From:	support@prontonetworks.com
+Sent:	Thursday, March 24, 2022 11:59 PM
+Subject:	{ " Line  00:0C:66:13:1C:64 has switched to mobile ",
+
+Hi  
+ 
+text: " Line 00:0C:66:13:1C:64 has switched to mobile ", ap_mac: " 00:0C:66:13:1C:64 ", value: " ", ssid: " 
+", uplink_name: " mobile ", network_name: "Skynet ", alert_time: " at 2022-03-25 06:59:13 UTC 
