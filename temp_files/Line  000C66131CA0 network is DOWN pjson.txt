@@ -1,8 +1,0 @@
-From:	support@prontonetworks.com
-Sent:	Friday, March 25, 2022 8:40 AM
-Subject:	{ " Line  00:0C:66:13:1C:A0 network is DOWN",
-
-Hi  
- 
-text: "Line 00:0C:66:13:1C:A0 network is DOWN", ap_mac: " 00:0C:66:13:1C:A0 ", value: " ", ssid: " ", 
-uplink_name: " 4g ", network_name: "Skynet ", alert_time: " at 2022-03-25 15:40:18 UTC 

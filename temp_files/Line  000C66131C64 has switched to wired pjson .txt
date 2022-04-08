@@ -1,8 +1,0 @@
-From:	support@prontonetworks.com
-Sent:	Friday, March 25, 2022 12:09 AM
-Subject:	{ " Line  00:0C:66:13:1C:64 has switched to wired ",
-
-Hi  
- 
-text: " Line 00:0C:66:13:1C:64 has switched to wired ", ap_mac: " 00:0C:66:13:1C:64 ", value: " ", ssid: " 
-", uplink_name: " wired ", network_name: "Skynet ", alert_time: " at 2022-03-25 07:09:05 UTC 

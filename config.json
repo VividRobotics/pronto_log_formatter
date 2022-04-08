@@ -1,0 +1,4 @@
+{"raw_bucket": "pronto-logs-ftp",
+    "raw_bucket_folder": "migrator",
+"processed_bucket": "pronto-logs-ftp",
+"processed_bucket_folder": "receiver"}
