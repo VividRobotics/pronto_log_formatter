@@ -1,7 +1,3 @@
-import boto3
-import json
-import os
-
 def s3_downloader(bucket, bucket_folder):
     """
     input: 

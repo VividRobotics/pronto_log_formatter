@@ -1,7 +1,7 @@
-from concurrent.futures import process
 import boto3
 import json
 import os
+import shutil
 import pronto_log_downloader
 import pronto_log_deleter
 import pronto_log_reformater
@@ -32,7 +32,7 @@ raw_bucket_folder = config["raw_bucket_folder"]
 processed_bucket_folder = config["processed_bucket_folder"]
 
 pronto_log_downloader.s3_downloader(raw_bucket, raw_bucket_folder)
-#pronto_log_deleter.s3_deleter(s3, raw_bucket, raw_bucket_folder)
+pronto_log_deleter.s3_deleter(s3, raw_bucket, raw_bucket_folder)
 
 #Creating a list of all available .txt files
 files = os.listdir("./temp_files/raw")
@@ -41,9 +41,9 @@ files = os.listdir("./temp_files/raw")
 [pronto_log_reformater.file_reformater(file) for file in files]
 
 #Uploading formatted files to s3
-#TODO TODO TODO TODO
-#https://www.developerfiles.com/upload-files-to-s3-with-python-keeping-the-original-folder-structure/
-[pronto_log_uploader.s3_uploader(processed_bucket, processed_bucket_folder)]
+[pronto_log_uploader.s3_uploader(s3, processed_bucket, processed_bucket_folder)]
+
+shutil.rmtree("./temp_files")
 
 #Removing original files from temp folder
 #[os.remove(f"./temp_files/raw/{file}") for file in files]

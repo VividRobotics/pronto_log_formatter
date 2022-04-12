@@ -1,6 +1,4 @@
-import boto3
 import json
-import os
 
 with open("./config.json", "r") as data:
     config = json.load(data)
@@ -19,4 +17,4 @@ def s3_deleter(resource, bucket, bucket_folder):
     object_keys = object_keys[1:]
 
     #Deleting old files from bucket folder
-    [resource.Object(config["bucket_name"], object_keys[x]).delete() for x in range(len(object_keys))]
+    [resource.Object(config["raw_bucket"], object_keys[x]).delete() for x in range(len(object_keys))]
